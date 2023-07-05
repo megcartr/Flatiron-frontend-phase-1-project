@@ -1,22 +1,24 @@
+
 body{
-    background-color: rgb(24, 82, 12);
+    background-color: rgb(167, 16, 49);
 }
 
 h1{
-    color: rgb(150, 137, 137);
+    color: rgb(238, 225, 225);
     font-size: 75px;
-    text-decoration: underline;
+    border: 5px solid;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center;
+    letter-spacing: 6px;
 }
 h2{
-    color:  rgb(150, 137, 137);
+    color: rgb(238, 225, 225);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center;
 }
 
 h3{
-    color: rgb(150, 137, 137);
+    color:  rgb(238, 225, 225);
     font-size:smaller;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align:center;
