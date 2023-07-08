@@ -2,12 +2,17 @@
 
 //one array iteration(map,forEach,filter,etc.)
 
-function meditationTimer() {
-    setInterval(function() {
-               date = new Date()
-               let hour = date.getHours();
-               let minutes = date.getMinutes();
-               let seconds = date.getSeconds();
-               document.getElementById("demo").innerHTML = hour + ":"+ minutes + ":" + seconds;
-  }, 1000);
-}
+fetch("http://localhost:3000/emotions", {
+  method:'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify ({
+      name: 'emotions'
+  })
+})
+.then(res => {
+  res.json()
+})
+.then(data => console.log(data))
+.catch(error => console.log(error))
