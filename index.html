@@ -19,45 +19,17 @@ alt = "meditation"; style ="width:400px;height:300px;">
     What goals did you have set for the day have you accomplished?
     <br>
     <br>
-    
+    LET'S MEDITATE! <br>
+    Meditation is an important exercise in which benefits your physical, mental, and spiritual well
+    being. Start the timer below and close you eyes. Focus on inhaling and exhaling
+    equally. For example, inhale for 4 seconds and exhale for 4 seconds. As you
+    are breathing, focus on clearing your mind. It will be difficult at first,
+    but with practice it become more natural. Let's begin!
 </h3>
 
+<button onclick="clockStart()">Start</button>
 
 <p id="demo"></p>
-<button onclick="countdownTimeStart()">BEGIN</button>
-
-<script>
-
-
-function countdownTimeStart(){
-
-var countDownDate = new Date("Sep 25, 2025 15:10:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-}
 </script>
 </body>
 </html>
