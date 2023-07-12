@@ -2,7 +2,7 @@
 
 //one array iteration(map,forEach,filter,etc.)
 
-fetch("http://localhost:3000/emotions", {
+fetch(`https://phase-1-project-usyy.onrender.com`), {
   method:'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -10,15 +10,20 @@ fetch("http://localhost:3000/emotions", {
   body: JSON.stringify ({
       name: 'emotions'
   })
+}
+.then(function(response){
+  return response.json();})
+  .then(function(data){
+    //data from DOM
 })
-.then(res => res.json())
-.then(data => console.log(data))
-.catch(error => console.log(error))
+
+
+//submit forms
 
 let form = document.getElementById('form')
 
 form.addEventListener('submit',function(event){
   event.preventDefault()
-
-  
 })
+
+//timer
