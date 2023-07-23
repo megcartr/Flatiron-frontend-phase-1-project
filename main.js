@@ -33,8 +33,11 @@ function isFinished(event) {
 const form = document.querySelector('.submitForm')
 form.addEventListener("submit", isFinished)
 
-document.querySelector('.buttons').addEventListener("click", function() {
-    this.style.backgroundColor= "black"
-})
+document.querySelector('.buttons').addEventListener("click", changeColor)
+
+function changeColor(event) {
+  event.preventDefault()
+  this.style.backgroundColor= "black"
+}
 
 
