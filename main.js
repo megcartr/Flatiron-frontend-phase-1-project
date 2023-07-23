@@ -31,9 +31,9 @@ function isFinished(event) {
 }
 
 const form = document.querySelector('.submitForm')
-form.addEventListener("click", isFinished)
+form.addEventListener("submit", isFinished)
 
-const submit = document.getElementById("submitForm")
+const submit = document.querySelector(',submitForm')
 submit.addEventListener("submit", isFinished)
 
 
