@@ -30,8 +30,8 @@ function isFinished(event) {
   alert ("SUBMITTED!")
 }
 
-const click = document.getElementById("submitForm")
-click.addEventListener("click", isFinished)
+const form = document.querySelector('.submitForm')
+form.addEventListener("click", isFinished)
 
 const submit = document.getElementById("submitForm")
 submit.addEventListener("submit", isFinished)
