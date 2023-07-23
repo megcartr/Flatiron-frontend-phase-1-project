@@ -19,7 +19,7 @@
       const button = document.createElement("button")
       button.setAttribute("id", `${emotions.id}`)
 
-      container.append("emotionList")
+      const container = container.append("emotionList")
     })}
   })
 
