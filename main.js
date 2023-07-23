@@ -26,8 +26,8 @@
 // submit forms
 
 function isFinished(event) {
-  e.preventDefault();
-  alert ("SUBMITTED!");
+  event.preventDefault()
+  alert ("SUBMITTED!")
 }
 
 const click = document.getElementById("submitForm")
