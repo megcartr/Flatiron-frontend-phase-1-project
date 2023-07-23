@@ -25,6 +25,10 @@
 
 // submit forms
 
+function isFinished(event) {
+  e.preventDefault();
+  alert ("SUBMITTED!");
+}
 
 const click = document.getElementById("submitForm")
 click.addEventListener("click", isFinished)
@@ -32,7 +36,4 @@ click.addEventListener("click", isFinished)
 const submit = document.getElementById("submitForm")
 submit.addEventListener("submit", isFinished)
 
-function isFinished(event) {
-  e.preventDefault();
-  alert ("SUBMITTED!");
-}
+
