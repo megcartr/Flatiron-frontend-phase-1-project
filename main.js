@@ -25,14 +25,14 @@
 
 // submit forms
 
-let submitForm = document.querySelector("submitButton");
 
+const click = document.getElementById("submitForm")
+click.addEventListener("click", isFinished)
 
-submitForm.addEventListener("click", isFinished(e))
+const submit = document.getElementById("submitForm")
+submit.addEventListener("submit", isFinished)
 
-submitForm.addEventListener("submit", isFinished(e))
-
-function isFinished {
+function isFinished(event) {
   e.preventDefault();
   alert ("SUBMITTED!");
 }
