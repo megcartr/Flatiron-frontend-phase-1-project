@@ -23,18 +23,18 @@
     })}
   })
 
-//submit forms
+// submit forms
 
-// let submitForm = document.querySelector("submitForm");
-// let submitButton = document.querySelector("SubmitButton");
+let submitForm = document.querySelector("submitForm");
+let submitButton = document.querySelector("SubmitButton");
 
-// submitButton.addEventListener("click", function(e){
-//   e.preventDefault();
-//   alert ("SUBMITTED!");
-// });
+submitButton.addEventListener("click", function(e){
+  e.preventDefault();
+  alert ("SUBMITTED!");
+});
 
-// submitForm.addEventListener("submit", function(e) {
-//   e.preventDefault();
-// })
+submitForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+})
 
 
