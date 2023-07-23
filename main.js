@@ -37,7 +37,7 @@ document.querySelector('.buttons').addEventListener("click", changeColor)
 
 function changeColor(event) {
   event.preventDefault()
-  this.style.backgroundColor= "black"
+  alert ("SUBMITTED!")
 }
 
 
