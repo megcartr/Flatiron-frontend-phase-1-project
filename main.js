@@ -8,20 +8,18 @@
   fetch("http://localhost:3000/emotions")
   .then (response => response.json())
   .then (emotions => renderEmotions(emotions))
- 
+  });
 
   function renderEmotions(emotions) {
     emotions.forEach((emotion) => {
       const emotionList = document.getElementById("container")
-      document.getElementById("name")
-      document.getElementById("image")
+      const p = document.createElement("p")
+      const img = document.createElement("img")
 
-      const button = document.createElement("button")
-      button.setAttribute("id", `${emotions.id}`)
-
-      const container = container.append("emotionList")
+      p.textContent = emotion.name
+      img.src = emotion.image
+      emotionList.append(p, img);
     })}
-  })
 
 // submit forms
 
@@ -33,11 +31,11 @@ function isFinished(event) {
 const form = document.querySelector('.submitForm')
 form.addEventListener("submit", isFinished)
 
+//buttons
+
 document.querySelector('.buttons').addEventListener("click", changeColor)
 
 function changeColor(event) {
   event.preventDefault()
-  alert ("SUBMITTED!")
+  this.style.backgroundColor= "black"
 }
-
-
